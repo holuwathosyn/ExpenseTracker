@@ -34,7 +34,7 @@ const Navigae=useNavigate();
       setArrayItemx((prev) => (prev + 1) % ArrImage.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [ArrImage.length]);
 
   function Handleclick(){
     setloading(true)
